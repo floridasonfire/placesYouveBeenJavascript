@@ -44,6 +44,10 @@ $(".location-form").submit(function(event){
 		});
 		
 	});
+	
+	$(".new-location").val("");
+	$(".new-toy").val("");
+	$(".new-landmark").val("");
 
 
 
