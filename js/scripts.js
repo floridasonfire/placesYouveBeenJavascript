@@ -24,28 +24,21 @@ $(".location-form").submit(function(event){
 	
 	});
 	
-	$(".location-list").append("<li class='location'>" + 
+	$(".location-list").append("<li class='locationli'>" + 
 									newPlace.newLocation +
 							   "</li>");
 
-	
-
 							  
-	$(".location").click(function(){
-		
+	$(".locationli").last().click(function() {		
 		$(".show-places").show();
+		
+		$(".show-places h2").text(newPlace.newLocation);
 		$(".location").text(newPlace.newLocation);
 		$(".toy").text(newPlace.timeOfYear);
 
 		
 		
 	});
-
-
-
-
-
-
 
 
 
