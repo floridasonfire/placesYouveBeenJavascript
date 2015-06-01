@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
-    <title>Trying Stuff Out</title>
+    <title>Places You've Been</title>
     
     
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">	
@@ -15,8 +15,11 @@
 
   <body>
 	<div class="container">
-		<div class="row">		
-			<div class="col-md-8">
+		
+		<h1 class="header-text">Places You've Been!</h1>	
+		
+		<div class="row row1">		
+			<div class="col-sm-4">
 				<form class="location-form">
 					<div class="form-group">
 						<label for="new-location">Location</label>
@@ -36,22 +39,29 @@
 					<button type="submit" class="btn btn-warning add-place">Add</button>
 				</form>
 			</div>
+				
+				
 					
-	        <div class="col-md-4">
-		            								
-				<ul class="location-list">
-					
+	        <div class="col-sm-4">
+		        <p class="all-locations">All Locations</p>   									
+				<ul class="location-list">	
 				</ul>
-			
-	          <div class="show-places">
-	            <h2></h2>
-	
-	            <p>Location: <span class="location"></span></p>
-	            <p>Time of Year: <span class="toy"></span></p>
-	            <p>Landmarks:</p>
-	            <ul class="landmark-list">
-	
-	          </div>	
+	        </div>
+	        
+	        
+	        
+	        <div class="col-sm-4">
+	        	<div class="show-places">
+		            <h2></h2>
+				
+		            <p>Location: <span class="location"></span></p>
+		            <p>Time of Year: <span class="toy"></span></p>
+		            <p>Landmarks:</p>
+		            
+		            <ul class="landmark-list">
+			        </ul>
+	          
+	        	</div>	
 	        </div>
 		</div>
 				

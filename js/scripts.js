@@ -50,12 +50,5 @@ $(".location-form").submit(function(event){
 	$(".new-landmark").val("");
 
 
-
-
-
-
-
-
-
 });
 
