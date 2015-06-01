@@ -2,3 +2,16 @@ form{
 	padding:30px;
 	margin:30px;
 }
+
+.location-list{
+	list-style:none;
+}
+
+.location {
+	color:red;
+	cursor: pointer;
+}
+
+.show-places{
+	display:none;
+}

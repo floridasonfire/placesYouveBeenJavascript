@@ -13,13 +13,20 @@ $(".location-form").submit(function(event){
 	
 	var inputtedLocation = $(".new-location").val();
 	var inputtedToy = $(".new-toy").val();
-	console.log(inputtedLocation);
-	console.log(inputtedToy);
-	var newPlace = { newlocation: inputtedLocation, timeOfYear: inputtedToy, landmarks: []};
+	var newPlace = { newLocation: inputtedLocation, timeOfYear: inputtedToy, landmarks: []};
 
 	$(".location-list").append("<li class='location'>" + 
-									newPlace.newlocation +
+									newPlace.newLocation +
 							   "</li>");
+
+	$(".location").click(function(){
+		
+		$(".show-places").show();
+		
+		
+		
+		
+	});
 
 
 
