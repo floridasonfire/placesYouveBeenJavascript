@@ -35,8 +35,13 @@ $(".location-form").submit(function(event){
 		$(".show-places h2").text(newPlace.newLocation);
 		$(".location").text(newPlace.newLocation);
 		$(".toy").text(newPlace.timeOfYear);
-
 		
+		$(".landmark-list").text("");
+
+		newPlace.landmarks.forEach(function(landmark){
+			$(".landmark-list").append("<li>" + landmark.name + "</li>");
+			
+		});
 		
 	});
 
