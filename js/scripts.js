@@ -1,6 +1,6 @@
 $(".add-landmark").click(function(){
 	$(".landmark-div").append(
-							'<div class="form-group new-landmark">' +
+							'<div class="form-group new-landmark-div">' +
 								'<label for="new-landmark">Landmarks</label>' +
 								'<input type="text" class="form-group new-landmark">' +
 							'</div>'
@@ -15,10 +15,22 @@ $(".location-form").submit(function(event){
 	var inputtedToy = $(".new-toy").val();
 	var newPlace = { newLocation: inputtedLocation, timeOfYear: inputtedToy, landmarks: []};
 
+	
+	$(".new-landmark-div").each(function(){
+		var inputtedLandmark = $(this).find("input.new-landmark").val();
+		var newLandmark = {name : inputtedLandmark };
+		
+		newPlace.landmarks.push(newLandmark);	
+	
+	});
+	
 	$(".location-list").append("<li class='location'>" + 
 									newPlace.newLocation +
 							   "</li>");
 
+	
+
+							  
 	$(".location").click(function(){
 		
 		$(".show-places").show();
