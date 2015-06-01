@@ -22,8 +22,9 @@ $(".location-form").submit(function(event){
 	$(".location").click(function(){
 		
 		$(".show-places").show();
-		
-		
+		$(".location").text(newPlace.newLocation);
+		$(".toy").text(newPlace.timeOfYear);
+
 		
 		
 	});
